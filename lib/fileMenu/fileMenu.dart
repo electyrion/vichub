@@ -12,9 +12,13 @@ import 'package:mac_dt/system/openApps.dart';
 import 'package:mac_dt/sizes.dart';
 import 'package:provider/provider.dart';
 
-import '../components/alertDialog.dart';
-import '../system/componentsOnOff.dart';
-import '../system/folders/folders.dart';
+import 'package:mac_dt/components/alertDialog.dart';
+import 'package:mac_dt/system/componentsOnOff.dart';
+import 'package:mac_dt/system/folders/folders.dart';
+
+// import '../components/alertDialog.dart';
+// import '../system/componentsOnOff.dart';
+// import '../system/folders/folders.dart';
 
 class FileMenu extends StatefulWidget {
 
