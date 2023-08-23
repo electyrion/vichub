@@ -1,6 +1,6 @@
 # Vicky's MacBook Air
 
-![VicHub Logo](docs/VicHubLogo.jpg)
+<!-- ![VicHub Logo](docs/VicHubLogo.jpg) -->
 
 Vicky's Macbook Air is a portfolio website created as a web Simulation of macOS Big Sur using Flutter web. The idea is to provide a glimpse at my personal MacBook Air. The project shows the power of Flutter Web in action.
 
