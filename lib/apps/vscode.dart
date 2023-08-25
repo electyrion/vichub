@@ -28,13 +28,13 @@ class _VSCodeState extends State<VSCode> {
   void initState() {
     position = widget.initPos;
     super.initState();
-    _iframeElementURL.src = 'https://github1s.com/electyrion/perkalian'; // TODO: update content
+    _iframeElementURL.src = 'https://github1s.com/electyrion/vichub';
     _iframeElementURL.style.border = 'none';
     _iframeElementURL.allow = "autoplay";
     _iframeElementURL.allowFullscreen = true;
     ui.platformViewRegistry.registerViewFactory(
       'vsIframe',
-          (int viewId) => _iframeElementURL,
+      (int viewId) => _iframeElementURL,
     );
     Provider.of<AnalyticsService>(context, listen: false)
         .logCurrentScreen("VS Code");
@@ -47,11 +47,11 @@ class _VSCodeState extends State<VSCode> {
     vsPan = Provider.of<OnOff>(context).getVSPan;
     return vsOpen
         ? AnimatedPositioned(
-      duration: Duration(milliseconds: vsPan ? 0 : 200),
-      top: vsFS ? 25 : position!.dy,
-      left: vsFS ? 0 : position!.dx,
-      child: vsWindow(context),
-    )
+            duration: Duration(milliseconds: vsPan ? 0 : 200),
+            top: vsFS ? 25 : position!.dy,
+            left: vsFS ? 0 : position!.dx,
+            child: vsWindow(context),
+          )
         : Nothing();
   }
 
@@ -63,7 +63,8 @@ class _VSCodeState extends State<VSCode> {
           ? screenWidth(context, mulBy: 1)
           : screenWidth(context, mulBy: 0.55),
       height: vsFS
-          ? screenHeight(context, mulBy: 0.975):screenHeight(context, mulBy: 0.7),
+          ? screenHeight(context, mulBy: 0.975)
+          : screenHeight(context, mulBy: 0.7),
       decoration: BoxDecoration(
         border: Border.all(
           color: Colors.white.withOpacity(0.2),
@@ -153,20 +154,23 @@ class _VSCodeState extends State<VSCode> {
                                 ),
                               ),
                               onTap: () {
-                                Provider.of<Apps>(context, listen: false).closeApp("vscode");
+                                Provider.of<Apps>(context, listen: false)
+                                    .closeApp("vscode");
                                 Provider.of<OnOff>(context, listen: false)
                                     .offVSFS();
-                                Provider.of<OnOff>(context, listen: false).toggleVS();
-
+                                Provider.of<OnOff>(context, listen: false)
+                                    .toggleVS();
                               },
                             ),
                             SizedBox(
                               width: screenWidth(context, mulBy: 0.005),
                             ),
                             InkWell(
-                              onTap: (){
-                                Provider.of<OnOff>(context, listen: false).toggleVS();
-                                Provider.of<OnOff>(context, listen: false).offVSFS();
+                              onTap: () {
+                                Provider.of<OnOff>(context, listen: false)
+                                    .toggleVS();
+                                Provider.of<OnOff>(context, listen: false)
+                                    .offVSFS();
                               },
                               child: Container(
                                 height: 11.5,
@@ -231,22 +235,24 @@ class _VSCodeState extends State<VSCode> {
               ),
             ],
           ),
-
-
-    Visibility(
-      visible: topApp != "VS Code",
-      child: InkWell(
-        onTap: (){
-          Provider.of<Apps>(context, listen: false)
-              .bringToTop(ObjectKey("vscode"));
-        },
-        child: Container(
-          width: screenWidth(context,),
-          height: screenHeight(context,),
-          color: Colors.transparent,
-        ),
-      ),
-    ),
+          Visibility(
+            visible: topApp != "VS Code",
+            child: InkWell(
+              onTap: () {
+                Provider.of<Apps>(context, listen: false)
+                    .bringToTop(ObjectKey("vscode"));
+              },
+              child: Container(
+                width: screenWidth(
+                  context,
+                ),
+                height: screenHeight(
+                  context,
+                ),
+                color: Colors.transparent,
+              ),
+            ),
+          ),
         ],
       ),
     );
