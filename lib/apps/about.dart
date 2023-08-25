@@ -166,38 +166,38 @@ class _AboutState extends State<About> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: screenHeight(context, mulBy: 0.015),
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "🏅     ",
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Theme.of(context)
-                            .cardColor
-                            .withOpacity(1),
-                      ),
-                    ),
-                    // TODO: Update content
-                    Expanded(
-                      child: Text(
-                        "I have conducted several sessions and hands-on workshops at colleges."
-                            "All the sessions was on Flutter.",
+                // SizedBox(
+                //   height: screenHeight(context, mulBy: 0.015),
+                // ),
+                // Row(
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: [
+                //     Text(
+                //       "🏅     ",
+                //       style: TextStyle(
+                //         fontSize: 15,
+                //         color: Theme.of(context)
+                //             .cardColor
+                //             .withOpacity(1),
+                //       ),
+                //     ),
+                //     // TODO: Update content
+                //     Expanded(
+                //       child: Text(
+                //         "I have conducted several sessions and hands-on workshops at colleges."
+                //             "All the sessions was on Flutter.",
 
 
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Theme.of(context)
-                              .cardColor
-                              .withOpacity(1),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                //         style: TextStyle(
+                //           fontSize: 15,
+                //           color: Theme.of(context)
+                //               .cardColor
+                //               .withOpacity(1),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
                 SizedBox(
                   height: screenHeight(context, mulBy: 0.015),
                 ),
@@ -261,7 +261,7 @@ class _AboutState extends State<About> {
             ),
           ),
         );
-        break;
+        // break;
       case "Education":
         return Container(
           alignment: Alignment.topCenter,
@@ -334,165 +334,165 @@ class _AboutState extends State<About> {
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: screenHeight(context, mulBy: 0.015),
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "🧿     ",
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Theme.of(context)
-                            .cardColor
-                            .withOpacity(1),
-                      ),
-                    ),
-                    // TODO: Update content
-                    Expanded(
-                      child: RichText(
-                        text: TextSpan(
-                          text: "2017-2018\n",
-                          children: [
-                            TextSpan(
-                              text: "Believer's Church Caarmel Engineering College\n",
-                              style: TextStyle(
-                                color: Color(0xff118bff),
+                // SizedBox(
+                //   height: screenHeight(context, mulBy: 0.015),
+                // ),
+                // Row(
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: [
+                //     Text(
+                //       "🧿     ",
+                //       style: TextStyle(
+                //         fontSize: 15,
+                //         color: Theme.of(context)
+                //             .cardColor
+                //             .withOpacity(1),
+                //       ),
+                //     ),
+                //     // TODO: Update content
+                //     Expanded(
+                //       child: RichText(
+                //         text: TextSpan(
+                //           text: "2017-2018\n",
+                //           children: [
+                //             TextSpan(
+                //               text: "Believer's Church Caarmel Engineering College\n",
+                //               style: TextStyle(
+                //                 color: Color(0xff118bff),
 
-                              ),
-                            ),
-                            TextSpan(
-                              text: "Btech\nComputer Science and Engineering",
-                              style: TextStyle(
-                                  color: Colors.grey,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16
-                              ),
-                            )
-                          ],
-                          style: TextStyle(
-                              fontSize: 17,
-                              fontFamily: "HN",
+                //               ),
+                //             ),
+                //             TextSpan(
+                //               text: "Btech\nComputer Science and Engineering",
+                //               style: TextStyle(
+                //                   color: Colors.grey,
+                //                   fontWeight: FontWeight.w500,
+                //                   fontSize: 16
+                //               ),
+                //             )
+                //           ],
+                //           style: TextStyle(
+                //               fontSize: 17,
+                //               fontFamily: "HN",
 
-                              fontWeight: FontWeight.w700,
-                              color: Theme.of(context)
-                                  .cardColor
-                                  .withOpacity(1),
-                              letterSpacing: 1
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: screenHeight(context, mulBy: 0.015),
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "🧿     ",
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Theme.of(context)
-                            .cardColor
-                            .withOpacity(1),
-                      ),
-                    ),
-                    Expanded(
-                      child: RichText(
-                        text: TextSpan(
-                          text: "2015-2017\n",
-                          children: [
-                            TextSpan(
-                              text: "Holy Cross Vidya Sadan, Thellakom\n",
-                              style: TextStyle(
-                                color: Color(0xff118bff),
+                //               fontWeight: FontWeight.w700,
+                //               color: Theme.of(context)
+                //                   .cardColor
+                //                   .withOpacity(1),
+                //               letterSpacing: 1
+                //           ),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
+                // SizedBox(
+                //   height: screenHeight(context, mulBy: 0.015),
+                // ),
+                // Row(
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: [
+                //     Text(
+                //       "🧿     ",
+                //       style: TextStyle(
+                //         fontSize: 15,
+                //         color: Theme.of(context)
+                //             .cardColor
+                //             .withOpacity(1),
+                //       ),
+                //     ),
+                //     Expanded(
+                //       child: RichText(
+                //         text: TextSpan(
+                //           text: "2015-2017\n",
+                //           children: [
+                //             TextSpan(
+                //               text: "Holy Cross Vidya Sadan, Thellakom\n",
+                //               style: TextStyle(
+                //                 color: Color(0xff118bff),
 
-                              ),
-                            ),
-                            TextSpan(
-                              text: "AISSCE\nComputer Science",
-                              style: TextStyle(
-                                  color: Colors.grey,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16
-                              ),
-                            )
-                          ],
-                          style: TextStyle(
-                              fontSize: 17,
-                              fontFamily: "HN",
+                //               ),
+                //             ),
+                //             TextSpan(
+                //               text: "AISSCE\nComputer Science",
+                //               style: TextStyle(
+                //                   color: Colors.grey,
+                //                   fontWeight: FontWeight.w500,
+                //                   fontSize: 16
+                //               ),
+                //             )
+                //           ],
+                //           style: TextStyle(
+                //               fontSize: 17,
+                //               fontFamily: "HN",
 
-                              fontWeight: FontWeight.w700,
-                              color: Theme.of(context)
-                                  .cardColor
-                                  .withOpacity(1),
-                              letterSpacing: 1
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: screenHeight(context, mulBy: 0.015),
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "🧿     ",
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Theme.of(context)
-                            .cardColor
-                            .withOpacity(1),
-                      ),
-                    ),
-                    Expanded(
-                      child: RichText(
-                        text: TextSpan(
-                          text: "2005-2015\n",
-                          children: [
-                            TextSpan(
-                              text: "Holy Cross Vidya Sadan, Thellakom\n",
-                              style: TextStyle(
-                                color: Color(0xff118bff),
+                //               fontWeight: FontWeight.w700,
+                //               color: Theme.of(context)
+                //                   .cardColor
+                //                   .withOpacity(1),
+                //               letterSpacing: 1
+                //           ),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
+                // SizedBox(
+                //   height: screenHeight(context, mulBy: 0.015),
+                // ),
+                // Row(
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: [
+                //     Text(
+                //       "🧿     ",
+                //       style: TextStyle(
+                //         fontSize: 15,
+                //         color: Theme.of(context)
+                //             .cardColor
+                //             .withOpacity(1),
+                //       ),
+                //     ),
+                //     Expanded(
+                //       child: RichText(
+                //         text: TextSpan(
+                //           text: "2005-2015\n",
+                //           children: [
+                //             TextSpan(
+                //               text: "Holy Cross Vidya Sadan, Thellakom\n",
+                //               style: TextStyle(
+                //                 color: Color(0xff118bff),
 
-                              ),
-                            ),
-                            TextSpan(
-                              text: "AISSE",
-                              style: TextStyle(
-                                  color: Colors.grey,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 16
-                              ),
-                            )
-                          ],
-                          style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "HN",
+                //               ),
+                //             ),
+                //             TextSpan(
+                //               text: "AISSE",
+                //               style: TextStyle(
+                //                   color: Colors.grey,
+                //                   fontWeight: FontWeight.w500,
+                //                   fontSize: 16
+                //               ),
+                //             )
+                //           ],
+                //           style: TextStyle(
+                //               fontSize: 17,
+                //               fontWeight: FontWeight.w700,
+                //               fontFamily: "HN",
 
-                              color: Theme.of(context)
-                                  .cardColor
-                                  .withOpacity(1),
-                              letterSpacing: 1
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                //               color: Theme.of(context)
+                //                   .cardColor
+                //                   .withOpacity(1),
+                //               letterSpacing: 1
+                //           ),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
               ],
             ),
           ),
         );
-        break;
+        // break;
       case "Skills":
         return Container(
           alignment: Alignment.topCenter,
@@ -568,7 +568,7 @@ class _AboutState extends State<About> {
                         height: screenHeight(context, mulBy: 0.015),
                       ),
                       Text(
-                        "🧿     C",
+                        "🧿     Java",
                         style: TextStyle(
                             fontFamily: "HN",
                             fontWeight: FontWeight.w500,
@@ -663,81 +663,81 @@ class _AboutState extends State<About> {
                             letterSpacing: 1
                         ),
                       ),
-                      SizedBox(
-                        height: screenHeight(context, mulBy: 0.015),
-                      ),
-                      Text(
-                        "🧿     Photoshop",
-                        style: TextStyle(
-                            fontFamily: "HN",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                            color: Theme.of(context)
-                                .cardColor
-                                .withOpacity(1),
-                            letterSpacing: 1
-                        ),
-                      ),
-                      SizedBox(
-                        height: screenHeight(context, mulBy: 0.015),
-                      ),
-                      Text(
-                        "🧿     DialogFlow",
-                        style: TextStyle(
-                            fontFamily: "HN",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                            color: Theme.of(context)
-                                .cardColor
-                                .withOpacity(1),
-                            letterSpacing: 1
-                        ),
-                      ),
-                      SizedBox(
-                        height: screenHeight(context, mulBy: 0.015),
-                      ),
-                      Text(
-                        "🧿     Gaming",
-                        style: TextStyle(
-                            fontFamily: "HN",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                            color: Theme.of(context)
-                                .cardColor
-                                .withOpacity(1),
-                            letterSpacing: 1
-                        ),
-                      ),
-                      SizedBox(
-                        height: screenHeight(context, mulBy: 0.015),
-                      ),
-                      Text(
-                        "🧿     Premiere Pro",
-                        style: TextStyle(
-                            fontFamily: "HN",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                            color: Theme.of(context)
-                                .cardColor
-                                .withOpacity(1),
-                            letterSpacing: 1
-                        ),
-                      ),
-                      SizedBox(
-                        height: screenHeight(context, mulBy: 0.015),
-                      ),
-                      Text(
-                        "🧿     After Effwcts",
-                        style: TextStyle(
-                            fontFamily: "HN",
-                            fontWeight: FontWeight.w500,
-                            fontSize: 16,
-                            color: Theme.of(context)
-                                .cardColor
-                                .withOpacity(1),
-                            letterSpacing: 1
-                        ),
-                      ),
+                      // SizedBox(
+                      //   height: screenHeight(context, mulBy: 0.015),
+                      // ),
+                      // Text(
+                      //   "🧿     Photoshop",
+                      //   style: TextStyle(
+                      //       fontFamily: "HN",
+                      //       fontWeight: FontWeight.w500,
+                      //       fontSize: 16,
+                      //       color: Theme.of(context)
+                      //           .cardColor
+                      //           .withOpacity(1),
+                      //       letterSpacing: 1
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: screenHeight(context, mulBy: 0.015),
+                      // ),
+                      // Text(
+                      //   "🧿     DialogFlow",
+                      //   style: TextStyle(
+                      //       fontFamily: "HN",
+                      //       fontWeight: FontWeight.w500,
+                      //       fontSize: 16,
+                      //       color: Theme.of(context)
+                      //           .cardColor
+                      //           .withOpacity(1),
+                      //       letterSpacing: 1
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: screenHeight(context, mulBy: 0.015),
+                      // ),
+                      // Text(
+                      //   "🧿     Gaming",
+                      //   style: TextStyle(
+                      //       fontFamily: "HN",
+                      //       fontWeight: FontWeight.w500,
+                      //       fontSize: 16,
+                      //       color: Theme.of(context)
+                      //           .cardColor
+                      //           .withOpacity(1),
+                      //       letterSpacing: 1
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: screenHeight(context, mulBy: 0.015),
+                      // ),
+                      // Text(
+                      //   "🧿     Premiere Pro",
+                      //   style: TextStyle(
+                      //       fontFamily: "HN",
+                      //       fontWeight: FontWeight.w500,
+                      //       fontSize: 16,
+                      //       color: Theme.of(context)
+                      //           .cardColor
+                      //           .withOpacity(1),
+                      //       letterSpacing: 1
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: screenHeight(context, mulBy: 0.015),
+                      // ),
+                      // Text(
+                      //   "🧿     After Effwcts",
+                      //   style: TextStyle(
+                      //       fontFamily: "HN",
+                      //       fontWeight: FontWeight.w500,
+                      //       fontSize: 16,
+                      //       color: Theme.of(context)
+                      //           .cardColor
+                      //           .withOpacity(1),
+                      //       letterSpacing: 1
+                      //   ),
+                      // ),
                     ],
                   ),
                 ),
@@ -745,7 +745,7 @@ class _AboutState extends State<About> {
             ],
           ),
         );
-        break;
+        // break;
       case "Projects":
         return Container(
           alignment: Alignment.topCenter,
@@ -758,7 +758,7 @@ class _AboutState extends State<About> {
                   height: screenHeight(context, mulBy: 0.02),
                 ),
                 Text(
-                    "Open Projects",
+                    "Latest Work",
                     style: TextStyle(
                         fontSize: 25,
                         color: Theme.of(context)
@@ -773,7 +773,7 @@ class _AboutState extends State<About> {
                 ),
                 InkWell(
                   onTap: (){
-                    html.window.open('https://chrisbinsunny.github.io/chrishub', 'new tab');
+                    html.window.open('https://electyrion.github.io/vichub', 'new tab');
                   },
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -790,10 +790,10 @@ class _AboutState extends State<About> {
                       Expanded(
                         child: RichText(
                           text: TextSpan(
-                            text: "Chrisbin's Macbook Pro\n",
+                            text: "Vicky's Macbook Air\n",
                             children: [
                               TextSpan(
-                                text: "chrisbinsunny.github.io/chrishub\n",
+                                text: "electyrion.github.io/vichub\n",
                                 style: TextStyle(
                                   color: Color(0xff118bff),
                                     fontWeight: FontWeight.w500,
@@ -830,7 +830,7 @@ class _AboutState extends State<About> {
                 ),
                 InkWell(
                   onTap: (){
-                    html.window.open('https://chrisbinsunny.github.io/dream', 'new tab');
+                    html.window.open('https://github.com/SafetyWalk/vermithor', 'new tab');
                   },
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -847,10 +847,10 @@ class _AboutState extends State<About> {
                       Expanded(
                         child: RichText(
                           text: TextSpan(
-                            text: "DREAM\n",
+                            text: "SafeWalk\n",
                             children: [
                               TextSpan(
-                                text: "chrisbinsunny.github.io/dream\n",
+                                text: "https://github.com/SafetyWalk/vermithor\n",
                                 style: TextStyle(
                                     color: Color(0xff118bff),
                                     fontWeight: FontWeight.w500,
@@ -858,10 +858,7 @@ class _AboutState extends State<About> {
                                 ),
                               ),
                               TextSpan(
-                                text: "A utility website used to find "
-                                  "colours from images and screenshots. "
-                              "There’s also a gradient builder to build"
-                              " beautiful background for websites.",
+                                text: "A mobile application that helps users to find the safest route to their destination",
                                 style: TextStyle(
                                     color: Colors.grey,
                                     fontWeight: FontWeight.w500,
@@ -884,12 +881,69 @@ class _AboutState extends State<About> {
                     ],
                   ),
                 ),
+                // SizedBox(
+                //   height: screenHeight(context, mulBy: 0.025),
+                // ),
+                // InkWell(
+                //   onTap: (){
+                //     html.window.open('https://chrisbinsunny.github.io/Flutter-Talks', 'new tab');
+                //   },
+                //   child: Row(
+                //     crossAxisAlignment: CrossAxisAlignment.start,
+                //     children: [
+                //       Text(
+                //         "👨‍💻     ",
+                //         style: TextStyle(
+                //           fontSize: 15,
+                //           color: Theme.of(context)
+                //               .cardColor
+                //               .withOpacity(1),
+                //         ),
+                //       ),
+                //       Expanded(
+                //         child: RichText(
+                //           text: TextSpan(
+                //             text: "Flutter Talks\n",
+                //             children: [
+                //               TextSpan(
+                //                 text: "chrisbinsunny.github.io/Flutter-Talks\n",
+                //                 style: TextStyle(
+                //                     color: Color(0xff118bff),
+                //                     fontWeight: FontWeight.w500,
+                //                     fontSize: 15
+                //                 ),
+                //               ),
+                //               TextSpan(
+                //                 text: "The project is basically a Flutter intro "
+                //                   " slideshow presentation used in workshops.",
+                //                 style: TextStyle(
+                //                     color: Colors.grey,
+                //                     fontWeight: FontWeight.w500,
+                //                     fontSize: 13
+                //                 ),
+                //               )
+                //             ],
+                //             style: TextStyle(
+                //                 fontSize: 17,
+                //                 fontFamily: "HN",
+                //                 fontWeight: FontWeight.w700,
+                //                 color: Theme.of(context)
+                //                     .cardColor
+                //                     .withOpacity(1),
+                //                 letterSpacing: 1
+                //             ),
+                //           ),
+                //         ),
+                //       ),
+                //     ],
+                //   ),
+                // ),
                 SizedBox(
                   height: screenHeight(context, mulBy: 0.025),
                 ),
                 InkWell(
                   onTap: (){
-                    html.window.open('https://chrisbinsunny.github.io/Flutter-Talks', 'new tab');
+                    html.window.open('https://electyrion.github.io', 'new tab');
                   },
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -906,10 +960,10 @@ class _AboutState extends State<About> {
                       Expanded(
                         child: RichText(
                           text: TextSpan(
-                            text: "Flutter Talks\n",
+                            text: "Another Portfolio\n",
                             children: [
                               TextSpan(
-                                text: "chrisbinsunny.github.io/Flutter-Talks\n",
+                                text: "electyrion.github.io\n",
                                 style: TextStyle(
                                     color: Color(0xff118bff),
                                     fontWeight: FontWeight.w500,
@@ -917,64 +971,7 @@ class _AboutState extends State<About> {
                                 ),
                               ),
                               TextSpan(
-                                text: "The project is basically a Flutter intro "
-                                  " slideshow presentation used in workshops.",
-                                style: TextStyle(
-                                    color: Colors.grey,
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 13
-                                ),
-                              )
-                            ],
-                            style: TextStyle(
-                                fontSize: 17,
-                                fontFamily: "HN",
-                                fontWeight: FontWeight.w700,
-                                color: Theme.of(context)
-                                    .cardColor
-                                    .withOpacity(1),
-                                letterSpacing: 1
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: screenHeight(context, mulBy: 0.025),
-                ),
-                InkWell(
-                  onTap: (){
-                    html.window.open('https://chrisbinsunny.github.io', 'new tab');
-                  },
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "👨‍💻     ",
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Theme.of(context)
-                              .cardColor
-                              .withOpacity(1),
-                        ),
-                      ),
-                      Expanded(
-                        child: RichText(
-                          text: TextSpan(
-                            text: "Old Portfolio\n",
-                            children: [
-                              TextSpan(
-                                text: "chrisbinsunny.github.io\n",
-                                style: TextStyle(
-                                    color: Color(0xff118bff),
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 15
-                                ),
-                              ),
-                              TextSpan(
-                                text: "The portfolio website while I was a real noob.",
+                                text: "My other portoflio made with flutter.",
                                 style: TextStyle(
                                     color: Colors.grey,
                                     fontWeight: FontWeight.w500,
@@ -1001,7 +998,7 @@ class _AboutState extends State<About> {
             ),
           ),
         );
-        break;
+        // break;
       case "Resume":
         //html.window.open('https://drive.google.com/uc?export=download&id=1cuIQHOhjvZfM_M74HjsICNpuzvMO0uKX', '_self');
         return Container(
@@ -1090,7 +1087,7 @@ class _AboutState extends State<About> {
                         ),
                         AboutWindowItems(
                           icon: CupertinoIcons.person_fill,
-                          iName: "About Chrisbin",
+                          iName: "About Vicky",
                           isSelected: selected=="About",
                           onTap: (){
                             setState(() {
