@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:provider/provider.dart';
@@ -89,7 +87,7 @@ class _WallpaperState extends State<Wallpaper> {
                   color: Theme.of(context).cardColor.withOpacity(1),
                   fontWeight: Theme.of(context)
                       .textTheme
-                      .headline3!
+                      .displaySmall!
                       .fontWeight,
                   fontFamily: "SF",
                 ),
@@ -140,7 +138,7 @@ class _WallpaperState extends State<Wallpaper> {
                      color: Theme.of(context).cardColor.withOpacity(1),
                      fontWeight: Theme.of(context)
                          .textTheme
-                         .headline3!
+                         .displaySmall!
                          .fontWeight,
                      fontFamily: "SF",
                    ),

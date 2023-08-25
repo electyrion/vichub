@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'dart:math' as math;
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +52,7 @@ class _ControlCentreDataState extends State<ControlCentreData> {
     brightness = Provider.of<DataBus>(context).getBrightness;
 
     BoxDecoration ccDecoration = BoxDecoration(
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).colorScheme.background,
       border: Border.all(color: Theme.of(context).cardColor, width: .55),
       borderRadius: BorderRadius.all(Radius.circular(10)),
 
@@ -97,7 +96,7 @@ class _ControlCentreDataState extends State<ControlCentreData> {
                 width: screenWidth(context, mulBy: 0.2) + 1,
                 decoration: BoxDecoration(
                   color:
-                  Theme.of(context).backgroundColor.withOpacity(0.1),
+                  Theme.of(context).colorScheme.background.withOpacity(0.1),
                   borderRadius: BorderRadius.all(Radius.circular(18)),
                   border: Border.all(
                       color: Theme.of(context).splashColor, width: 1.1),
@@ -111,7 +110,7 @@ class _ControlCentreDataState extends State<ControlCentreData> {
                   width: screenWidth(context, mulBy: 0.2),
                   decoration: BoxDecoration(
                     color: Theme.of(context)
-                        .backgroundColor
+                        .colorScheme.background
                         .withOpacity(0.1),
                     borderRadius: BorderRadius.all(Radius.circular(18)),
                     border: Border.all(
@@ -733,6 +732,7 @@ class _ControlCentreDataState extends State<ControlCentreData> {
                                       width: screenWidth(context, mulBy: 0.028),
                                       decoration: BoxDecoration(
                                           color: Theme.of(context)
+                                              // ignore: deprecated_member_use
                                               .bottomAppBarColor,
                                           borderRadius: BorderRadius.circular(5)
                                       ),
@@ -762,6 +762,7 @@ class _ControlCentreDataState extends State<ControlCentreData> {
                                       CupertinoIcons.play_arrow_solid,
                                       size: 17,
                                       color: Theme.of(context)
+                                          // ignore: deprecated_member_use
                                           .bottomAppBarColor.withOpacity(0.5),
                                     ),
                                     SizedBox(
@@ -771,6 +772,7 @@ class _ControlCentreDataState extends State<ControlCentreData> {
                                       CupertinoIcons.forward_fill,
                                       size: 16,
                                       color: Theme.of(context)
+                                          // ignore: deprecated_member_use
                                           .bottomAppBarColor.withOpacity(0.3),
                                     )
                                   ],
@@ -807,7 +809,7 @@ class BrdrContainer extends StatelessWidget {
       height: screenHeight(context, mulBy: height) + 1,
       width: screenWidth(context, mulBy: width) + 1,
       decoration: BoxDecoration(
-        color: Theme.of(context).backgroundColor.withOpacity(0.00),
+        color: Theme.of(context).colorScheme.background.withOpacity(0.00),
         borderRadius: BorderRadius.all(Radius.circular(10)),
         border: Border.all(color: Theme.of(context).shadowColor, width: 1),
       ),

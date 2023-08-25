@@ -1,9 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../sizes.dart';
 import '../widgets.dart';
 
+// ignore: must_be_immutable
 class LeftPaneItems extends StatefulWidget {
   bool isSelected;
   final String? iName;
