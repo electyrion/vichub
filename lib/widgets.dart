@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:mac_dt/providers.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter/foundation.dart';
 
 /// A [Nothing] instance, you can use in your layouts.
 const nil = Nothing();
