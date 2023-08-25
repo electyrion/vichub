@@ -35,7 +35,9 @@ class _NilElement extends Element {
   bool get debugDoingBuild => false;
 
   @override
-  void performRebuild() {}
+  void performRebuild() {
+    super.performRebuild();
+  }
 }
 
 
@@ -57,7 +59,7 @@ class MBPText extends StatelessWidget {
       fit: BoxFit.scaleDown,
       child: Text(text!,
         style: TextStyle(
-        fontWeight: weight==null?Theme.of(context).textTheme.headline4!.fontWeight:weight,
+        fontWeight: weight==null?Theme.of(context).textTheme.headlineMedium!.fontWeight:weight,
         fontFamily: fontFamily,
         color: color,
         fontSize: size,
@@ -100,6 +102,7 @@ class CustomBoxShadow extends BoxShadow {
   }
 }
 
+// ignore: must_be_immutable
 class Scaler extends StatelessWidget {
   Widget? child;
   Scaler({this.child, Key? key}) : super(key: key);
