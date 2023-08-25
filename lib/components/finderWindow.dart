@@ -1,11 +1,9 @@
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:mac_dt/system/componentsOnOff.dart';
-import 'package:mac_dt/theme/theme.dart';
 import 'package:provider/provider.dart';
 import '../apps/about.dart';
 import '../apps/calendar.dart';
@@ -373,7 +371,7 @@ class _FinderState extends State<Finder> {
             ),
           ],
         );
-        break;
+        // break;
       case "Desktop":
         return GridView(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -476,7 +474,7 @@ class _FinderState extends State<Finder> {
             },
           ),
         );
-        break;
+        // break;
 
       // TODO: Update content
       case "Downloads":
@@ -534,57 +532,57 @@ class _FinderState extends State<Finder> {
           },
         );
 
-        return GridView(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 5,
-              childAspectRatio: 6/5.5,
-              mainAxisSpacing: screenHeight(context, mulBy: 0.05)
-          ),
-          padding: EdgeInsets.symmetric(
-            vertical: screenHeight(context, mulBy: 0.04),
-          ),
-          shrinkWrap: true,
-          scrollDirection: Axis.vertical,
-          physics: BouncingScrollPhysics(),
-          children: [
-            FinderItems(
-              name: "Antonn- Game Testing platform.pdf",
-              link: "",
-            ),
-            FinderItems(
-              name: "Cabby final.pdf",
-              link: "",
-            ),
-            FinderItems(
-              name: "Chrisbin seminar.pdf",
-              link: "",
-            ),
-            FinderItems(
-              name: "Flutter Talks.pdf",
-              link: "",
-            ),
-            FinderItems(
-              name: "Ride Sharing platform.pdf",
-              link: "",
-            ),
-            FinderItems(
-              name: "Dream.zip",
-              link: "",
-              nav: null,
-              folder: true,
-            ),
-          ],
-        );
-        break;
-      case "Movies":
-        return SizedBox();
-        break;
-      case "Music":
-        return SizedBox();
-        break;
-      case "Pictures":
-        return SizedBox();
-        break;
+    //     return GridView(
+    //       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+    //           crossAxisCount: 5,
+    //           childAspectRatio: 6/5.5,
+    //           mainAxisSpacing: screenHeight(context, mulBy: 0.05)
+    //       ),
+    //       padding: EdgeInsets.symmetric(
+    //         vertical: screenHeight(context, mulBy: 0.04),
+    //       ),
+    //       shrinkWrap: true,
+    //       scrollDirection: Axis.vertical,
+    //       physics: BouncingScrollPhysics(),
+    //       children: [
+    //         FinderItems(
+    //           name: "Antonn- Game Testing platform.pdf",
+    //           link: "",
+    //         ),
+    //         FinderItems(
+    //           name: "Cabby final.pdf",
+    //           link: "",
+    //         ),
+    //         FinderItems(
+    //           name: "Chrisbin seminar.pdf",
+    //           link: "",
+    //         ),
+    //         FinderItems(
+    //           name: "Flutter Talks.pdf",
+    //           link: "",
+    //         ),
+    //         FinderItems(
+    //           name: "Ride Sharing platform.pdf",
+    //           link: "",
+    //         ),
+    //         FinderItems(
+    //           name: "Dream.zip",
+    //           link: "",
+    //           nav: null,
+    //           folder: true,
+    //         ),
+    //       ],
+    //     );
+    //     break;
+    //   case "Movies":
+    //     return SizedBox();
+    //     break;
+    //   case "Music":
+    //     return SizedBox();
+    //     break;
+    //   case "Pictures":
+    //     return SizedBox();
+    //     break;
     }
   }
 
@@ -739,7 +737,7 @@ class _FinderState extends State<Finder> {
                           style: TextStyle(
                             fontWeight: Theme.of(context)
                                 .textTheme
-                                .headline1!
+                                .displayLarge!
                                 .fontWeight,
                             fontFamily: "SF",
                             color: Theme.of(context).cardColor.withOpacity(.38),
@@ -870,7 +868,7 @@ class _FinderState extends State<Finder> {
                                     size: 15,
                                     weight: Theme.of(context)
                                         .textTheme
-                                        .headline1!
+                                        .displayLarge!
                                         .fontWeight,
                                     color: Theme.of(context)
                                         .cardColor
@@ -973,6 +971,7 @@ class _FinderState extends State<Finder> {
 }
 
 
+// ignore: must_be_immutable
 class FolderForFinder extends StatefulWidget {
   String? name;
   bool? renaming;
@@ -1123,7 +1122,7 @@ class _FolderForFinderState extends State<FolderForFinder> {
                         for(int element=0; element<folders.length; element++) {
                           if(folders[element].name==controller!.text) {
                             if(int.tryParse(folders[element].name!.split(" ").last)!=null) { ///for not changing "untitled folder" to "untitled 1"
-                              folderNum = int.parse(folders[element].name!.split(" ").last) ?? folderNum;
+                              folderNum = int.parse(folders[element].name!.split(" ").last);
                               controller!.text = "${controller!.text.substring(0, controller!.text.lastIndexOf(" "))} ${++folderNum}";
                               element=0;   ///for checking if changed name == name in already checked folders
                             }

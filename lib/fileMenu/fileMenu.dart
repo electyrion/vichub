@@ -1,5 +1,3 @@
-
-import 'dart:developer';
 import 'dart:html';
 import 'dart:math' as math;
 import 'dart:ui';

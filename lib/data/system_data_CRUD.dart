@@ -1,7 +1,3 @@
-
-
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:mac_dt/components/wallpaper/wallpaper.dart';
