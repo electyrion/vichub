@@ -1,19 +1,16 @@
 import 'dart:async';
 import 'dart:developer';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hive/hive.dart';
 import 'package:mac_dt/system/folders/folders_CRUD.dart';
 import 'package:provider/provider.dart';
 
-import '../../apps/systemPreferences.dart';
 import '../../data/analytics.dart';
 import '../componentsOnOff.dart';
 import '../../providers.dart';
 import '../../sizes.dart';
-import '../openApps.dart';
 part 'folders.g.dart';
 
 
@@ -41,7 +38,7 @@ class Folders extends ChangeNotifier{
         for(int element=0; element<folders.length; element++) {
         if(folders[element].name==name) {
           if(int.tryParse(folders[element].name!.split(" ").last)!=null) { ///for not changing "untitled folder" to "untitled 1"
-            folderNum = int.parse(folders[element].name!.split(" ").last) ?? folderNum;
+            folderNum = int.parse(folders[element].name!.split(" ").last);
             name = "${name.substring(0, name.lastIndexOf(" "))} ${++folderNum}";
             element=0;   ///for checking if changed name == name in already checked folders
           }
@@ -113,6 +110,7 @@ class Folders extends ChangeNotifier{
 
 }
 
+// ignore: must_be_immutable
 class Folder extends StatefulWidget {
   String? name;
   Offset? initPos;
@@ -351,7 +349,7 @@ class _FolderState extends State<Folder> {
                               for(int element=0; element<folders.length; element++) {
                                 if(folders[element].name==controller!.text) {
                                   if(int.tryParse(folders[element].name!.split(" ").last)!=null) { ///for not changing "untitled folder" to "untitled 1"
-                                    folderNum = int.parse(folders[element].name!.split(" ").last) ?? folderNum;
+                                    folderNum = int.parse(folders[element].name!.split(" ").last);
                                     controller!.text = "${controller!.text.substring(0, controller!.text.lastIndexOf(" "))} ${++folderNum}";
                                     element=0;   ///for checking if changed name == name in already checked folders
                                   }
@@ -395,6 +393,7 @@ class _FolderState extends State<Folder> {
 }
 
 
+// ignore: must_be_immutable
 class DesktopItem extends StatefulWidget {
   String? name;
   Offset? initPos;
