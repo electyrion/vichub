@@ -1,11 +1,7 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:intl/intl.dart';
 import 'package:mac_dt/data/analytics.dart';
 import 'package:mac_dt/system/componentsOnOff.dart';
-import 'package:mac_dt/theme/theme.dart';
 import 'package:provider/provider.dart';
 import '../../system/openApps.dart';
 import '../../sizes.dart';
@@ -36,8 +32,7 @@ class _AboutState extends State<About> {
   void initState() {
     position = widget.initPos;
     super.initState();
-    // TODO: Update content
-    _iframeElementURL.src = 'https://drive.google.com/file/d/1cuIQHOhjvZfM_M74HjsICNpuzvMO0uKX/preview';
+    _iframeElementURL.src = 'https://drive.google.com/file/d/1MamnsPvVwmk7yFcWPMJJC5sM2R8PcHvg/preview';
     _iframeElementURL.style.border = 'none';
     _iframeElementURL.allow = "autoplay; encrypted-media;";
     _iframeElementURL.allowFullscreen = true;
@@ -1009,7 +1004,7 @@ class _AboutState extends State<About> {
             viewType: 'resumeIframe',
           ),
         );
-        break;
+        // break;
     }
   }
 
@@ -1284,6 +1279,7 @@ class _AboutState extends State<About> {
 }
 
 
+// ignore: must_be_immutable
 class AboutWindowItems extends StatefulWidget {
   bool isSelected;
   final String? iName;
