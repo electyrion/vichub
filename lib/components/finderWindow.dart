@@ -574,15 +574,15 @@ class _FinderState extends State<Finder> {
     //       ],
     //     );
     //     break;
-    //   case "Movies":
-    //     return SizedBox();
-    //     break;
-    //   case "Music":
-    //     return SizedBox();
-    //     break;
-    //   case "Pictures":
-    //     return SizedBox();
-    //     break;
+      case "Movies":
+      //   // return SizedBox();
+        // break;
+      case "Music":
+        return SizedBox();
+        // break;
+      case "Pictures":
+        return SizedBox();
+        // break;
     }
   }
 
