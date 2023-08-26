@@ -32,7 +32,7 @@ class _AboutState extends State<About> {
   void initState() {
     position = widget.initPos;
     super.initState();
-    _iframeElementURL.src = 'https://drive.google.com/file/d/1YyHNeUx2eZpk0Q4I6VGrsbzrTSBhQ77f/preview';
+    _iframeElementURL.src = 'https://drive.google.com/file/d/1MamnsPvVwmk7yFcWPMJJC5sM2R8PcHvg/preview';
     _iframeElementURL.style.border = 'none';
     _iframeElementURL.allow = "autoplay; encrypted-media;";
     _iframeElementURL.allowFullscreen = true;

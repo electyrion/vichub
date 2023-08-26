@@ -1,16 +1,13 @@
 import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:mac_dt/apps/systemPreferences.dart';
 import 'package:mac_dt/components/finderWindow.dart';
-import 'package:mac_dt/theme/theme.dart';
 import 'package:mac_dt/widgets.dart';
 import 'package:provider/provider.dart';
 
 import '../components/wallpaper/wallpaper.dart';
-import '../data/analytics.dart';
 import '../system/componentsOnOff.dart';
 import '../system/openApps.dart';
 import '../providers.dart';
@@ -458,6 +455,7 @@ class _LaunchPadState extends State<LaunchPad> {
 }
 
 
+// ignore: must_be_immutable
 class LaunchPadItem extends StatefulWidget {
   final String iName;
   VoidCallback? onTap;
