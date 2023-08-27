@@ -10,7 +10,7 @@ Vicky's Macbook Air is a portfolio website created as a web Simulation of macOS 
 ![GitHub issues](https://img.shields.io/github/issues/electyrion/vichub)
 ![GitHub](https://img.shields.io/github/license/electyrion/vichub)
 ![GitHub Repo stars](https://img.shields.io/github/stars/electyrion/vichub?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/sokkablyat?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/electyrion?style=social)
 [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Felectyrion%2Fvichub&label=Visitors&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Felectyrion%2Fvichub)
 
 ## 🖥️ Demo
