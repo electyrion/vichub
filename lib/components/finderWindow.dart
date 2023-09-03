@@ -418,16 +418,16 @@ class _FinderState extends State<Finder> {
                         ),
 
                         FinderItems(
-                          name: "Chrisbin Resume.pdf",
-                          link: "https://drive.google.com/file/d/1cuIQHOhjvZfM_M74HjsICNpuzvMO0uKX/view",
+                          name: "Vicky Resume.pdf",
+                          link: "https://drive.google.com/file/d/1MamnsPvVwmk7yFcWPMJJC5sM2R8PcHvg/view",
                         ),
                         FinderItems(
-                          name: "Chrisbin Resume Dark long.pdf",
-                          link: "https://drive.google.com/file/d/1lPK15gLkNr2Rso3JNr0b-RdmFN245w87/view",
+                          name: "Vicky Resume Dark long.pdf",
+                          link: "https://drive.google.com/file/d/1MamnsPvVwmk7yFcWPMJJC5sM2R8PcHvg/view",
                         ),
                         FinderItems(
-                          name: "Chrisbin Resume Light long.pdf",
-                          link: "https://drive.google.com/file/d/11j0UCdSXBRA1DPFct1EImmKFpyQu0fiH/view",
+                          name: "Vicky Resume Light long.pdf",
+                          link: "https://drive.google.com/file/d/1MamnsPvVwmk7yFcWPMJJC5sM2R8PcHvg/view",
                         ),
 
                         FinderItems(
@@ -501,7 +501,7 @@ class _FinderState extends State<Finder> {
                         link: "",
                       ),
                       FinderItems(
-                        name: "Chrisbin seminar.pdf",
+                        name: "Vicky seminar.pdf",
                         link: "",
                       ),
                       FinderItems(
@@ -1342,27 +1342,27 @@ class Projects extends StatelessWidget {
           FinderItems(
             name: "Macbook",
             link: "",
-            nav: (){html.window.open("https://chrisbinsunny.github.io/chrishub", 'new tab');},
+            nav: (){html.window.open("https://electyrion.github.io/vichub", 'new tab');},
             folder: true,
           ),
+          // FinderItems(
+          //   name: "Dream",
+          //   link: "",
+          //   nav: (){html.window.open("https://chrisbinsunny.github.io/dream", 'new tab');},
+          //   folder: true,
+          // ),
           FinderItems(
-            name: "Dream",
+            name: "Portfolio Web",
             link: "",
-            nav: (){html.window.open("https://chrisbinsunny.github.io/dream", 'new tab');},
+            nav: (){html.window.open("https://electyrion.github.io", 'new tab');},
             folder: true,
           ),
-          FinderItems(
-            name: "Portfolio old",
-            link: "",
-            nav: (){html.window.open("https://chrisbinsunny.github.io", 'new tab');},
-            folder: true,
-          ),
-          FinderItems(
-            name: "Flutter-Talks",
-            link: "",
-            nav: (){html.window.open("https://chrisbinsunny.github.io/Flutter-Talks", 'new tab');},
-            folder: true,
-          ),
+          // FinderItems(
+          //   name: "Flutter-Talks",
+          //   link: "",
+          //   nav: (){html.window.open("https://chrisbinsunny.github.io/Flutter-Talks", 'new tab');},
+          //   folder: true,
+          // ),
         ],
       ),
     );
