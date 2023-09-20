@@ -320,7 +320,7 @@ class _SafariState extends State<Safari> {
                                 ),
                                 maxLines: 1,
                                 decoration: InputDecoration(
-                                  hintText: "Search or enter website name", //TODO
+                                  hintText: "Search or enter website name", 
                                   isCollapsed: true,
                                   contentPadding:
                                       EdgeInsets.fromLTRB(5.0, 00.0, 5.0, 3.0),
@@ -395,7 +395,7 @@ class _SafariState extends State<Safari> {
                                               size: 22,
                                               weight: Theme.of(context)
                                                   .textTheme
-                                                  .headline1!
+                                                  .displayLarge!
                                                   .fontWeight,
                                             ),
                                             SizedBox(
@@ -661,7 +661,7 @@ class _SafariState extends State<Safari> {
                                                 size: 22,
                                                 weight: Theme.of(context)
                                                     .textTheme
-                                                    .headline1!
+                                                    .displayLarge!
                                                     .fontWeight,
                                               ),
                                               SizedBox(
@@ -672,7 +672,6 @@ class _SafariState extends State<Safari> {
                                                 spacing: 20,
                                                 runSpacing: 20,
 
-                                                // TODO: Update content
                                                 children: [
                                                   InkWell(
                                                     onTap: () {
