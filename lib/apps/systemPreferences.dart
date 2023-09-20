@@ -1,16 +1,12 @@
-import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:mac_dt/system/componentsOnOff.dart';
 import 'package:mac_dt/theme/theme.dart';
 import 'package:provider/provider.dart';
 import '../../system/openApps.dart';
 import '../../sizes.dart';
 import '../../widgets.dart';
-import 'dart:html' as html;
-import 'dart:ui' as ui;
+
 
 import '../components/wallpaper/wallpaper.dart';
 import '../data/analytics.dart';
@@ -19,7 +15,6 @@ import '../data/analytics.dart';
 /// due to the timer added in initstate. Usually wallpaper bool value is false. To be passed as true
 /// if wallpaper screen is to be opened.
 ///
-//TODO My image
 
 
 class SystemPreferences extends StatefulWidget {
@@ -249,7 +244,7 @@ class _SystemPreferencesState extends State<SystemPreferences> {
                             text: "System Preferences",
                             size: 15,
                             weight:
-                                Theme.of(context).textTheme.headline3!.fontWeight,
+                                Theme.of(context).textTheme.displaySmall!.fontWeight,
                             color: Theme.of(context).cardColor.withOpacity(1),
                             softWrap: true,
                           ),
@@ -369,7 +364,6 @@ class _SystemPreferencesState extends State<SystemPreferences> {
                                 child: Row(
                                   children: [
                                     Container(
-                                      // TODO: Update image
                                       child: Image.asset(
                                         "assets/sysPref/vicky.png",
                                         fit: BoxFit.cover,
@@ -392,7 +386,7 @@ class _SystemPreferencesState extends State<SystemPreferences> {
                                                     .withOpacity(0.9),
                                                 fontWeight: Theme.of(context)
                                                     .textTheme
-                                                    .headline3!
+                                                    .displaySmall!
                                                     .fontWeight,
                                                 fontSize: 17,
                                                 fontFamily: "SF",
