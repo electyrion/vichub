@@ -1,9 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:mac_dt/system/componentsOnOff.dart';
-import 'package:mac_dt/theme/theme.dart';
 import 'package:provider/provider.dart';
 import '../../data/analytics.dart';
 import '../../system/openApps.dart';
@@ -530,7 +526,7 @@ class _SafariState extends State<Safari> {
                                                 InkWell(
                                                   onTap: () {
                                                     handleDOC(
-                                                      '<a class="twitter-timeline" href="https://twitter.com/sokkablyat?ref_src=twsrc%5Etfw">Tweets by chrisbinsunny</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
+                                                      '<a class="twitter-timeline" href="https://twitter.com/sokkablyat?ref_src=twsrc%5Etfw">Tweets by vicky</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
                                                     );
 
                                                   },
@@ -681,7 +677,7 @@ class _SafariState extends State<Safari> {
                                                   InkWell(
                                                     onTap: () {
                                                       html.window.open(
-                                                        'https://chrisbinsunny.github.io/chrishub',
+                                                        'https://electyrion.github.io/vichub',
                                                         'new tab',
                                                       );
                                                     },
@@ -699,7 +695,7 @@ class _SafariState extends State<Safari> {
                                                           ),
                                                           clipBehavior: Clip.antiAlias,
                                                           child: Image.asset(
-                                                            "assets/caches/chrishub.jpg",
+                                                            "assets/caches/vichub.jpg",
                                                             fit: BoxFit.cover,
                                                             alignment: Alignment.topLeft,
 
@@ -723,7 +719,7 @@ class _SafariState extends State<Safari> {
                                                   InkWell(
                                                     onTap: () {
                                                       html.window.open(
-                                                        'https://chrisbinsunny.github.io/dream',
+                                                        'https://electyrion.github.io',
                                                         'new tab',
                                                       );
                                                     },
@@ -741,7 +737,7 @@ class _SafariState extends State<Safari> {
                                                           ),
                                                           clipBehavior: Clip.antiAlias,
                                                           child: Image.asset(
-                                                            "assets/caches/dream.jpg",
+                                                            "assets/caches/web_porto.png",
                                                             fit: BoxFit.cover,
                                                             alignment: Alignment.topLeft,
 
@@ -752,7 +748,7 @@ class _SafariState extends State<Safari> {
                                                               mulBy: 0.01),
                                                         ),
                                                         MBPText(
-                                                          text: "Dream",
+                                                          text: "Web Porto",
                                                           size: 10,
                                                           color: Theme.of(context)
                                                               .cardColor
@@ -764,7 +760,7 @@ class _SafariState extends State<Safari> {
                                                   InkWell(
                                                     onTap: () {
                                                       html.window.open(
-                                                        'https://chrisbinsunny.github.io/Flutter-Talks',
+                                                        'https://linktr.ee/vicky_maulana',
                                                         'new tab',
                                                       );
                                                     },
@@ -782,7 +778,7 @@ class _SafariState extends State<Safari> {
                                                           ),
                                                           clipBehavior: Clip.antiAlias,
                                                           child: Image.asset(
-                                                            "assets/caches/flutterTalks.jpg",
+                                                            "assets/caches/linktree.png",
                                                             fit: BoxFit.cover,
                                                             alignment: Alignment.topLeft,
                                                           ),
@@ -792,7 +788,7 @@ class _SafariState extends State<Safari> {
                                                               mulBy: 0.01),
                                                         ),
                                                         MBPText(
-                                                          text: "Flutter Talks",
+                                                          text: "Linktree",
                                                           size: 10,
                                                           color: Theme.of(context)
                                                               .cardColor
