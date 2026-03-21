@@ -26,8 +26,6 @@ class ThemeNotifier with ChangeNotifier {
     indicatorColor: Colors.white,  //Calendar bg color
     shadowColor: Colors.black.withOpacity(0.15), //Control Center outer border
     // accentColor: Colors.black.withOpacity(.15), //shadow color
-    // ignore: deprecated_member_use
-    backgroundColor: Colors.white.withOpacity(0.15), //Control Center
     cardColor: Colors.black.withOpacity(0.0), //Control Center item border, font color
     splashColor: Colors.black.withOpacity(0.2), //Control Center border
     focusColor: Colors.white.withOpacity(0.4), //docker color
@@ -37,13 +35,11 @@ class ThemeNotifier with ChangeNotifier {
     dividerColor: Colors.white, // Safari Window color
     dialogBackgroundColor: Colors.white, //feedback body color
     disabledColor: Colors.white, //terminal top color
-    // ignore: deprecated_member_use
-    errorColor: Colors.white.withOpacity(0.3), //iMessages color
     hoverColor: Colors.white.withOpacity(0.4), // RCM color
     highlightColor:Colors.black.withOpacity(.13),
     colorScheme: ColorScheme.fromSwatch().copyWith(
         secondary: Color(0xffbfbfbf), //feedback light color
-        background: Color(0xff898989),  //feedback dark color
+        surface: Color(0xff898989),  //feedback dark color
       error: Color(0xffcecece), //feedback textbox fill
       primary: Color(0xff232220),
       onError: Colors.white, //system Pref 1
@@ -51,16 +47,7 @@ class ThemeNotifier with ChangeNotifier {
       inversePrimary: Color(0xff80807e), //system Pref 2 text color
     ),
 
-    primaryTextTheme: TextTheme(
-      labelLarge: TextStyle(
-        color: Colors.blueGrey,
-        decorationColor: Colors.blueGrey[300],
-      ),
-      titleMedium: TextStyle(
-        color: Colors.black,
-      ),
-    ),
-    iconTheme: IconThemeData(color: Colors.blueGrey), bottomAppBarTheme: BottomAppBarTheme(color: Colors.black.withOpacity(0.1)),
+    iconTheme: IconThemeData(color: Colors.blueGrey), bottomAppBarTheme: BottomAppBarThemeData(color: Colors.black.withOpacity(0.1)),
 
 
   );
@@ -89,8 +76,6 @@ class ThemeNotifier with ChangeNotifier {
     ),
     fontFamily: "SF",
     primarySwatch: Colors.deepOrange,
-      // ignore: deprecated_member_use
-      backgroundColor: Color(0xff2b2b2b).withOpacity(.05), //Control Center
     cardColor: Colors.white.withOpacity(0.15), //Control Center item border, font color
     indicatorColor: Colors.black,  //Calendar bg color, ipad messages left color
       splashColor: Colors.black.withOpacity(0.4), //Control Center border
@@ -103,12 +88,10 @@ class ThemeNotifier with ChangeNotifier {
       hintColor: Color(0xff242127).withOpacity(0.3), //window transparency Color
       dialogBackgroundColor: Color(0xff1e1f23), //feedback body color
       disabledColor: Color(0xff39373b), //terminal top color
-      // ignore: deprecated_member_use
-      errorColor: Color(0xff1e1e1e).withOpacity(0.4), //iMessages color, Fill color
       hoverColor: Color(0xff110f0f).withOpacity(0.4),
     colorScheme: ColorScheme.fromSwatch().copyWith(
       secondary: Color(0xff3b3b3b), //feedback light color
-      background: Color(0xff2f2f2f),  //feedback dark color
+      surface: Color(0xff2f2f2f),  //feedback dark color
         error: Color(0xff2f2e32), //feedback textbox fill
       primary: Color(0xff232220),
       onError: Color(0xff1f1e1d), //system Pref 1
@@ -117,17 +100,8 @@ class ThemeNotifier with ChangeNotifier {
 
     ),
 
-      primaryTextTheme: TextTheme(
-      labelLarge: TextStyle(
-        color: Colors.blueGrey[200],
-        decorationColor: Colors.blueGrey[50],
-      ),
-      titleMedium: TextStyle(
-        color: Colors.blueGrey[300],
-      ),
-    ),
     iconTheme: IconThemeData(color: Colors.blueGrey[200]),
-      highlightColor: Colors.white, bottomAppBarTheme: BottomAppBarTheme(color: Colors.white.withOpacity(0.3)), //darkMode button
+      highlightColor: Colors.white, bottomAppBarTheme: BottomAppBarThemeData(color: Colors.white.withOpacity(0.3)), //darkMode button
   );
 
   ThemeData _themeData;

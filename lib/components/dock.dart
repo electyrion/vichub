@@ -129,7 +129,7 @@ class _DockerState extends State<Docker> {
                 child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                   child: BackdropFilter(
-                    filter: new ImageFilter.blur(sigmaX: 70.0, sigmaY: 70.0),
+                    filter: ImageFilter.blur(sigmaX: 70.0, sigmaY: 70.0),
                     child: Container(
                       padding: EdgeInsets.only(bottom: 2),
                       width: screenWidth(context, mulBy: 0.55),

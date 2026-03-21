@@ -26,7 +26,7 @@ class _MacOSState extends State<MacOS> {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    var size = MediaQuery.sizeOf(context);
     bool ccOpen = Provider.of<OnOff>(context).getCc;
     final dataBus = Provider.of<DataBus>(context, listen: true);
     List<Widget> apps = Provider.of<Apps>(context).getApps;

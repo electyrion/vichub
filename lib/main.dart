@@ -1,5 +1,4 @@
 import 'dart:html' as html;
-import 'dart:js';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -86,27 +85,5 @@ class Home extends StatelessWidget {
       theme: themeNotifier.getTheme(),
       home: MacOS(),
     );
-  }
-}
-
-
-void fullscreenWorkaround(Element element) {
-  var elem = new JsObject.fromBrowserObject(element);
-
-  if (elem.hasProperty("requestFullscreen")) {
-    elem.callMethod("requestFullscreen");
-  }
-  else {
-    List<String> vendors = ['moz', 'webkit', 'ms', 'o'];
-    for (String vendor in vendors) {
-      String vendorFullscreen = "${vendor}RequestFullscreen";
-      if (vendor == 'moz') {
-        vendorFullscreen = "${vendor}RequestFullScreen";
-      }
-      if (elem.hasProperty(vendorFullscreen)) {
-        elem.callMethod(vendorFullscreen);
-        return;
-      }
-    }
   }
 }

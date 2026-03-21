@@ -396,8 +396,12 @@ class _FinderState extends State<Finder> {
 
       // TODO: Update info
       case "Documents":
-        return WillPopScope(
-          onWillPop: () async => !await _navigatorKey2.currentState!.maybePop(),
+        return PopScope(
+          canPop: false,
+          onPopInvokedWithResult: (didPop, result) async {
+            if (didPop) return;
+            await _navigatorKey2.currentState!.maybePop();
+          },
           child: Navigator(
             key: _navigatorKey2,
             onGenerateRoute: (routeSettings) {
@@ -992,7 +996,7 @@ class _FolderForFinderState extends State<FolderForFinder> {
   @override
   void initState() {
     super.initState();
-    controller = new TextEditingController(text: widget.name, );
+    controller = TextEditingController(text: widget.name, );
     controller!.selection=TextSelection.fromPosition(TextPosition(offset: controller!.text.length));
     selectText();
     widget.renameFolder=(){

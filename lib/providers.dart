@@ -15,7 +15,7 @@ class DataBus extends ChangeNotifier{
   String onTop="finder";
   String fs="";
   double? brightness =95.98;
-  Offset pointerPos = new Offset(0, 0);
+  Offset pointerPos = Offset(0, 0);
   bool nightShift= false;
   double scale= 1;
   //TODO: Have to change default notification according to device

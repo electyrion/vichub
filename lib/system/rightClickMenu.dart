@@ -24,7 +24,7 @@ class _RightClickState extends State<RightClick> {
   late var themeNotifier;
 
   Offset QFinder(){
-    Offset? offset=new Offset(0, 0);
+    Offset? offset=Offset(0, 0);
     if(widget.initPos!.dx+screenWidth(context, mulBy: 0.15)+1>=screenWidth(context))
       {
         if(widget.initPos!.dy+screenHeight(context, mulBy: 0.3)+1>=screenHeight(context)) {
@@ -285,7 +285,7 @@ class BrdrContainer extends StatelessWidget {
       height: screenHeight(context, mulBy: height) + 1,
       width: screenWidth(context, mulBy: width) + 1,
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.background.withOpacity(0.00),
+        color: Theme.of(context).colorScheme.surface.withOpacity(0.00),
         borderRadius: BorderRadius.all(Radius.circular(10)),
         border: Border.all(color: Theme.of(context).shadowColor, width: 1),
       ),
@@ -308,7 +308,7 @@ class _FolderRightClickState extends State<FolderRightClick> {
   late var themeNotifier;
 
   Offset QFinder(){
-    Offset? offset=new Offset(0, 0);
+    Offset? offset=Offset(0, 0);
     if(widget.initPos!.dx+screenWidth(context, mulBy: 0.15)+1>=screenWidth(context))
     {
       if(widget.initPos!.dy+screenHeight(context, mulBy: 0.73)+1>=screenHeight(context)) {

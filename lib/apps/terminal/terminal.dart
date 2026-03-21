@@ -489,8 +489,8 @@ class _TerminalState extends State<Terminal> {
     }
   }
 
-  void _handleKeyEvent(RawKeyEvent event) {
-    if (event.runtimeType == RawKeyDownEvent) {
+  void _handleKeyEvent(KeyEvent event) {
+    if (event is KeyDownEvent) {
       if (event.logicalKey == LogicalKeyboardKey.arrowUp) {
         setState(() {
           if (updownIndex < oldCommands.length) {
@@ -551,10 +551,10 @@ class _TerminalState extends State<Terminal> {
       duration: Duration(milliseconds: terminalPan ? 0 : 200),
       top: terminalFS ? 25 : position!.dy,
       left: terminalFS ? 0 : position!.dx,
-      child: RawKeyboardListener(
+      child: KeyboardListener(
           autofocus: true,
           focusNode: FocusNode(),
-          onKey: _handleKeyEvent,
+          onKeyEvent: _handleKeyEvent,
           child: terminalWindow(context)),
     );
   }
@@ -610,7 +610,7 @@ class _TerminalState extends State<Terminal> {
                               "vicky -- -zsh -- ${terminalFS ? screenWidth(context, mulBy: .1).floor() : screenWidth(context, mulBy: 0.04).floor()}x${terminalFS ? screenHeight(context, mulBy: 0.0966).floor() : screenHeight(context, mulBy: 0.05).floor()}",
                           fontFamily: "HN",
                           color: Theme.of(context).cardColor.withOpacity(1),
-                          weight: Theme.of(context).textTheme.headline4!.fontWeight,
+                          weight: Theme.of(context).textTheme.headlineMedium!.fontWeight,
                         )
                       ],
                     ),
@@ -835,10 +835,10 @@ class _TerminalCommandState extends State<TerminalCommand> {
                         fontFamily: "Menlo",
                         fontSize: 10,
                         fontWeight:
-                            Theme.of(context).textTheme.headline4!.fontWeight
+                            Theme.of(context).textTheme.headlineMedium!.fontWeight
                         // height: 1,
                         ),
-                    decoration: new InputDecoration(
+                    decoration: InputDecoration(
                         border: InputBorder.none,
                         focusedBorder: InputBorder.none,
                         enabledBorder: InputBorder.none,
@@ -864,7 +864,7 @@ class _TerminalCommandState extends State<TerminalCommand> {
                 color: Theme.of(context).cardColor.withOpacity(1),
                 fontFamily: "Menlo",
                 fontSize: 10,
-                fontWeight: Theme.of(context).textTheme.headline4!.fontWeight),
+                fontWeight: Theme.of(context).textTheme.headlineMedium!.fontWeight),
           ),
         ),
       ],

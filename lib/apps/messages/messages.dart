@@ -31,8 +31,8 @@ class _MessagesState extends State<Messages> {
   late bool messagesFS;
   late bool messagesPan;
   Future? messageRecords;
-  ScrollController chatScrollController = new ScrollController();
-  ScrollController nameScrollController = new ScrollController();
+  ScrollController chatScrollController = ScrollController();
+  ScrollController nameScrollController = ScrollController();
   int? selectedChatIndex;
   late bool info;
   MessageContent? selectedChat= new MessageContent(
@@ -281,7 +281,7 @@ class _MessagesState extends State<Messages> {
                                                   Container(
                                                     decoration: BoxDecoration(
                                                       shape: BoxShape.circle,
-                                                      gradient: new LinearGradient(
+                                                      gradient: LinearGradient(
                                                           colors: [
                                                             Color(0xff6d6d6d),
                                                             Color(0xff484848)
@@ -463,7 +463,9 @@ class _MessagesState extends State<Messages> {
                             bottomRight: Radius.circular(10)),
                         child: Container(
                           decoration: BoxDecoration(
-                            color: Theme.of(context).errorColor.withOpacity(1),
+                            color: Provider.of<ThemeNotifier>(context).isDark()
+                                ? Color(0xff1e1e1e).withOpacity(0.4)
+                                : Colors.white.withOpacity(0.3),
                             border: Border(
                                 left: BorderSide(
                                     color: Colors.black, width: 0.8)),
@@ -810,7 +812,7 @@ class _MessagesState extends State<Messages> {
                             Container(
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                gradient: new LinearGradient(
+                                gradient: LinearGradient(
                                     colors: [
                                       Color(0xff6d6d6d),
                                       Color(0xff484848)
@@ -856,7 +858,7 @@ class _MessagesState extends State<Messages> {
                               color: Theme.of(context).cardColor.withOpacity(1),
                               fontFamily: "HN",
                               size: 13,
-                              weight: Theme.of(context).textTheme.headline3!.fontWeight,
+                              weight: Theme.of(context).textTheme.displaySmall!.fontWeight,
                               overflow:
                               TextOverflow.fade,
                               maxLines: 1,
@@ -1290,14 +1292,16 @@ class DetailsPainter extends CustomPainter{
 
 
 
-    Paint paint_0 = new Paint()
+    Paint paint_0 = Paint()
       ..color = Theme.of(context).cardColor.withOpacity(0.2)
       ..style = PaintingStyle.stroke
       ..strokeJoin= StrokeJoin.round
       ..strokeWidth = 1;
 
-    Paint paint_1 = new Paint()
-      ..color = Theme.of(context).errorColor
+    Paint paint_1 = Paint()
+      ..color = Provider.of<ThemeNotifier>(context, listen: false).isDark()
+          ? Color(0xff1e1e1e).withOpacity(0.4)
+          : Colors.white.withOpacity(0.3)
       ..style = PaintingStyle.fill
       ..strokeWidth = 1;
 

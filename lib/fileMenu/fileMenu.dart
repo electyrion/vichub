@@ -24,7 +24,7 @@ class FileMenu extends StatefulWidget {
 }
 
 class _FileMenuState extends State<FileMenu> {
-  var rand = new math.Random();
+  var rand = math.Random();
   late int num;
 
   @override
@@ -51,24 +51,24 @@ class _FileMenuState extends State<FileMenu> {
 
   @override
   Widget build(BuildContext context) {
-    var size= MediaQuery.of(context).size;
+    var size= MediaQuery.sizeOf(context);
     String topApp= Provider.of<Apps>(context).getTop;
-    return RawKeyboardListener(
+    return KeyboardListener(
       autofocus: true,
       focusNode: FocusNode(),
-      onKey: (event) async {
-        if (event.isKeyPressed(LogicalKeyboardKey.escape)) {
+      onKeyEvent: (event) async {
+        if (event is KeyDownEvent && event.logicalKey == LogicalKeyboardKey.escape) {
           document.exitFullscreen();
         }
       },
       child: ClipRect(
-        child: new BackdropFilter(
-          filter: new ImageFilter.blur(sigmaX: 70.0, sigmaY: 70.0),
-          child: new Container(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 70.0, sigmaY: 70.0),
+          child: Container(
               height: 25,
               width: screenWidth(context,),
               padding: EdgeInsets.all(3),
-              decoration: new BoxDecoration(
+              decoration: BoxDecoration(
                 color: Theme.of(context).canvasColor,
                 border:  Border(
                   bottom: BorderSide(

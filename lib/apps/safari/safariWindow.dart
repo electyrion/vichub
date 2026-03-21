@@ -21,7 +21,7 @@ class Safari extends StatefulWidget {
 class _SafariState extends State<Safari> {
   Offset? position = Offset(0.0, 0.0);
   String selected = "Applications";
-  TextEditingController urlController = new TextEditingController();
+  TextEditingController urlController = TextEditingController();
   late bool safariFS;
   late bool safariPan;
   String url = "";
@@ -366,8 +366,12 @@ class _SafariState extends State<Safari> {
                         color: Theme.of(context).hintColor,
                       ),
                       child: (url == "")
-                          ?WillPopScope(
-                        onWillPop: () async => !await _navigatorKey2.currentState!.maybePop(),
+                          ?PopScope(
+                        canPop: false,
+                        onPopInvokedWithResult: (didPop, result) async {
+                          if (didPop) return;
+                          await _navigatorKey2.currentState!.maybePop();
+                        },
                         child: Navigator(
                           key: _navigatorKey2,
                           onGenerateRoute: (routeSettings) {

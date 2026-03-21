@@ -29,7 +29,7 @@ class _DesktopItemState extends State<DesktopItem> {
   @override
   void initState() {
     super.initState();
-    controller = new TextEditingController(text: widget.name, );
+    controller = TextEditingController(text: widget.name, );
     controller!.selection=TextSelection.fromPosition(TextPosition(offset: controller!.text.length));
     position=widget.initPos;
     selectText();

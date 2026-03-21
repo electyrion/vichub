@@ -341,8 +341,12 @@ class _SystemPreferencesState extends State<SystemPreferences> {
 
               ///Content part
               Expanded(
-                child: WillPopScope(
-                  onWillPop: () async => !await _navigatorKey2.currentState!.maybePop(),
+                child: PopScope(
+                  canPop: false,
+                  onPopInvokedWithResult: (didPop, result) async {
+                    if (didPop) return;
+                    await _navigatorKey2.currentState!.maybePop();
+                  },
                   child: Navigator(
                     key: _navigatorKey2,
                     onGenerateRoute: (routeSettings) {

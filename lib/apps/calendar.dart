@@ -232,17 +232,17 @@ class _CalendarState extends State<Calendar> {
                       defaultTextStyle: TextStyle(
                           color: Theme.of(context).cardColor.withOpacity(1),
                           fontWeight:
-                              Theme.of(context).textTheme.headline4!.fontWeight,
+                              Theme.of(context).textTheme.headlineMedium!.fontWeight,
                           fontFamily: "HN"),
                       weekendTextStyle: TextStyle(
                           color: Theme.of(context).cardColor.withOpacity(0.6),
                           fontWeight:
-                              Theme.of(context).textTheme.headline4!.fontWeight,
+                              Theme.of(context).textTheme.headlineMedium!.fontWeight,
                           fontFamily: "HN"),
                       outsideTextStyle: TextStyle(
                           color: Theme.of(context).cardColor.withOpacity(0.3),
                           fontWeight:
-                              Theme.of(context).textTheme.headline4!.fontWeight,
+                              Theme.of(context).textTheme.headlineMedium!.fontWeight,
                           fontFamily: "HN"),
 
                     ),
@@ -261,7 +261,7 @@ class _CalendarState extends State<Calendar> {
                                 color: Theme.of(context).cardColor.withOpacity(1),
                                 fontWeight: Theme.of(context)
                                     .textTheme
-                                    .headline1!
+                                    .displayLarge!
                                     .fontWeight,
                                 fontSize: 25,
                                 fontFamily: "HN"),
@@ -272,7 +272,7 @@ class _CalendarState extends State<Calendar> {
                                 color: Theme.of(context).cardColor.withOpacity(1),
                                 fontWeight: Theme.of(context)
                                     .textTheme
-                                    .headline2!
+                                    .displayMedium!
                                     .fontWeight,
                                 fontSize: 25,
                                 fontFamily: "HN"),
@@ -298,7 +298,7 @@ class _CalendarState extends State<Calendar> {
                                   color: Theme.of(context).cardColor.withOpacity(1),
                                   fontWeight: Theme.of(context)
                                       .textTheme
-                                      .headline2!
+                                      .displayMedium!
                                       .fontWeight,
                                   fontSize: 14,
                                   fontFamily: "HN"),
@@ -332,7 +332,7 @@ class _CalendarState extends State<Calendar> {
                                           color: Colors.white,
                                           fontWeight: Theme.of(context)
                                               .textTheme
-                                              .headline2!
+                                              .displayMedium!
                                               .fontWeight,
                                           fontSize: 12.5,
                                           fontFamily: "HN"),
@@ -368,7 +368,7 @@ class _CalendarState extends State<Calendar> {
                                           color: Colors.white,
                                           fontWeight: Theme.of(context)
                                               .textTheme
-                                              .headline2!
+                                              .displayMedium!
                                               .fontWeight,
                                           fontSize: 12.5,
                                           fontFamily: "HN"),
@@ -396,7 +396,7 @@ class _CalendarState extends State<Calendar> {
                                         color: Theme.of(context).cardColor.withOpacity(0.3),
                                         fontWeight: Theme.of(context)
                                             .textTheme
-                                            .headline2!
+                                            .displayMedium!
                                             .fontWeight,
                                         fontSize: 14,
                                         fontFamily: "HN"),
@@ -415,7 +415,7 @@ class _CalendarState extends State<Calendar> {
                                     color: Theme.of(context).cardColor.withOpacity(1),
                                     fontWeight: Theme.of(context)
                                         .textTheme
-                                        .headline2!
+                                        .displayMedium!
                                         .fontWeight,
                                     fontSize: 14,
                                     fontFamily: "HN"),

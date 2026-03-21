@@ -49,7 +49,7 @@ class _FeedBackState extends State<FeedBack> {
   TextEditingController? feedbackController;
   String type = "Feedback";
   FeedbackForm? feedbackItem= FeedbackForm("", "email", "mobileNo", "type", "feedback", DateTime(0), key: ObjectKey("fresh"));
-  ScrollController scrollController = new ScrollController();
+  ScrollController scrollController = ScrollController();
 
   void _submitForm() {
     if (nameController!.text.isNotEmpty &&
@@ -194,13 +194,13 @@ class _FeedBackState extends State<FeedBack> {
                             });
                           },
                           child: Container(
-                            decoration: new BoxDecoration(
-                                gradient: new LinearGradient(
+                            decoration: BoxDecoration(
+                                gradient: LinearGradient(
                                   begin: Alignment.topCenter,
                                   end: Alignment.bottomCenter,
                                   colors: [
                                     Theme.of(context).colorScheme.secondary
-                                    ,Theme.of(context).colorScheme.background,
+                                    ,Theme.of(context).colorScheme.surface,
 
                                   ],
                                 ),
@@ -239,7 +239,7 @@ class _FeedBackState extends State<FeedBack> {
                               ),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10)),
-                              color: Theme.of(context).colorScheme.background,
+                              color: Theme.of(context).colorScheme.surface,
                             ),
                             child: ClipRRect(
                               borderRadius:
@@ -275,7 +275,7 @@ class _FeedBackState extends State<FeedBack> {
                                             decoration: BoxDecoration(
                                               color: index % 2 == 0
                                                   ? Theme.of(context).colorScheme.secondary
-                                                  : Theme.of(context).colorScheme.background,
+                                                  : Theme.of(context).colorScheme.surface,
                                                 border: Border.all(
                                                     color: feedbackItem!.key==ObjectKey(snapshot.data?.docs[index].id)?Color(0xffb558e1):Colors.transparent,
                                                     width: 2
@@ -802,8 +802,8 @@ class _FeedBackState extends State<FeedBack> {
                                           child: InkWell(
                                             onTap: _submitForm,
                                             child: Container(
-                                              decoration: new BoxDecoration(
-                                                  gradient: new LinearGradient(
+                                              decoration: BoxDecoration(
+                                                  gradient: LinearGradient(
                                                     begin: Alignment.topCenter,
                                                     end: Alignment.bottomCenter,
                                                     colors: [
@@ -1061,8 +1061,8 @@ class _FeedBackState extends State<FeedBack> {
                                             );
                                           },
                                           child: Container(
-                                            decoration: new BoxDecoration(
-                                                gradient: new LinearGradient(
+                                            decoration: BoxDecoration(
+                                                gradient: LinearGradient(
                                                   begin: Alignment.topCenter,
                                                   end: Alignment.bottomCenter,
                                                   colors: [
@@ -1196,8 +1196,8 @@ class _FeedBackState extends State<FeedBack> {
                                         });
                                       },
                                       child: Container(
-                                        decoration: new BoxDecoration(
-                                            gradient: new LinearGradient(
+                                        decoration: BoxDecoration(
+                                            gradient: LinearGradient(
                                               begin: Alignment.topCenter,
                                               end: Alignment.bottomCenter,
                                               colors: [
@@ -1352,8 +1352,8 @@ class _FeedBackState extends State<FeedBack> {
                                               });
                                             },
                                             child: Container(
-                                              decoration: new BoxDecoration(
-                                                  gradient: new LinearGradient(
+                                              decoration: BoxDecoration(
+                                                  gradient: LinearGradient(
                                                     begin: Alignment.topCenter,
                                                     end: Alignment.bottomCenter,
                                                     colors: [
