@@ -15,4 +15,3 @@ jobs:
         with:
           targetBranch: production
           baseHref: /vichub/
-          customArgs: --web-renderer canvaskit
