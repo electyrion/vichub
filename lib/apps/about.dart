@@ -7,7 +7,7 @@ import '../../system/openApps.dart';
 import '../../sizes.dart';
 import '../../widgets.dart';
 import 'dart:html' as html;
-import 'dart:ui' as ui;
+import 'dart:ui_web' as ui_web;
 
 
 
@@ -36,7 +36,7 @@ class _AboutState extends State<About> {
     _iframeElementURL.style.border = 'none';
     _iframeElementURL.allow = "autoplay; encrypted-media;";
     _iframeElementURL.allowFullscreen = true;
-    ui.platformViewRegistry.registerViewFactory(
+    ui_web.platformViewRegistry.registerViewFactory(
       'resumeIframe',
           (int viewId) => _iframeElementURL,
     );

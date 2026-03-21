@@ -6,7 +6,8 @@ import '../system/openApps.dart';
 import '../sizes.dart';
 import '../widgets.dart';
 import 'dart:html' as html;
-import 'dart:ui' as ui;
+import 'dart:ui' show ImageFilter;
+import 'dart:ui_web' as ui_web;
 
 class VSCode extends StatefulWidget {
   final Offset? initPos;
@@ -30,7 +31,7 @@ class _VSCodeState extends State<VSCode> {
     _iframeElementURL.style.border = 'none';
     _iframeElementURL.allow = "autoplay";
     _iframeElementURL.allowFullscreen = true;
-    ui.platformViewRegistry.registerViewFactory(
+    ui_web.platformViewRegistry.registerViewFactory(
       'vsIframe',
       (int viewId) => _iframeElementURL,
     );
@@ -215,7 +216,7 @@ class _VSCodeState extends State<VSCode> {
                       bottomRight: Radius.circular(10),
                       bottomLeft: Radius.circular(10)),
                   child: BackdropFilter(
-                    filter: ui.ImageFilter.blur(sigmaX: 30.0, sigmaY: 30.0),
+                    filter: ImageFilter.blur(sigmaX: 30.0, sigmaY: 30.0),
                     child: Container(
                       height: screenHeight(context, mulBy: 0.14),
                       width: screenWidth(

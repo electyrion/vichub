@@ -6,7 +6,8 @@ import '../../system/openApps.dart';
 import '../../sizes.dart';
 import '../../widgets.dart';
 import 'dart:html' as html;
-import 'dart:ui' as ui;
+import 'dart:ui' show ImageFilter;
+import 'dart:ui_web' as ui_web;
 
 //TODO: BUG Found>> After opening youtube and closing the safari, all searches redirects to youtube.
 
@@ -93,12 +94,12 @@ class _SafariState extends State<Safari> {
     _iframeElementURL.allow = "autoplay";
     _iframeElementURL.allow = "keyboard-map";
     _iframeElementURL.allowFullscreen = true;
-    ui.platformViewRegistry.registerViewFactory(
+    ui_web.platformViewRegistry.registerViewFactory(
       'urlIframe',
       (int viewId) => _iframeElementURL,
     );
 
-    ui.platformViewRegistry.registerViewFactory(
+    ui_web.platformViewRegistry.registerViewFactory(
       'docIframe',
       (int viewId) => _iframeElementDOC,
     );
@@ -353,7 +354,7 @@ class _SafariState extends State<Safari> {
                       bottomRight: Radius.circular(10),
                       bottomLeft: Radius.circular(10)),
                   child: BackdropFilter(
-                    filter: ui.ImageFilter.blur(sigmaX: 30.0, sigmaY: 30.0),
+                    filter: ImageFilter.blur(sigmaX: 30.0, sigmaY: 30.0),
                     child: Container(
                       // padding: EdgeInsets.symmetric(
                       //     horizontal: screenWidth(context, mulBy: 0.013),
